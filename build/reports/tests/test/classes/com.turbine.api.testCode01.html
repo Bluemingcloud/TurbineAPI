@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - testCode01</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>testCode01</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.turbine.api.html">com.turbine.api</a> &gt; testCode01</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.283s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test()</td>
+<td class="success">0.283s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:45:25.302 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:45:25.312 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:45:25.340 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.turbine.api.testCode01] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:45:25.349 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.turbine.api.testCode01], using SpringBootContextLoader
+16:45:25.352 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.turbine.api.testCode01]: class path resource [com/turbine/api/testCode01-context.xml] does not exist
+16:45:25.353 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.turbine.api.testCode01]: class path resource [com/turbine/api/testCode01Context.groovy] does not exist
+16:45:25.353 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.turbine.api.testCode01]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:45:25.354 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.turbine.api.testCode01]: testCode01 does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:45:25.393 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.turbine.api.testCode01]
+16:45:25.445 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\bsm\Desktop\course\android\TurbineAPI\build\classes\java\main\com\turbine\api\TurbineApiApplication.class]
+16:45:25.446 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.turbine.api.TurbineApiApplication for test class com.turbine.api.testCode01
+16:45:25.542 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.turbine.api.testCode01]: using defaults.
+16:45:25.543 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:45:25.559 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1db0ec27, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d9fc57a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@d4ab71a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b4ef7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1af05b03, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5987e932, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1ad777f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5bbbdd4b, org.springframework.test.context.event.EventPublishingTestExecutionListener@438bad7c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@25230246, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4fdf8f12, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4a8b5227, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@54f5f647, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6979efad, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a6d5a8f]
+16:45:25.564 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@77e2a6e2 testClass = testCode01, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5710768a testClass = testCode01, locations = '{}', classes = '{class com.turbine.api.TurbineApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3f363cf5, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@a5b0b86, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@b968a76, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1433046b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2e54db99, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@398dada8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2024-09-11 16:45:25.833  INFO 8292 --- [    Test worker] com.turbine.api.testCode01               : Starting testCode01 using Java 11.0.23 on DESKTOP-BK3UBAQ with PID 8292 (started by bsm in C:\Users\bsm\Desktop\course\android\TurbineAPI)
+2024-09-11 16:45:25.834  INFO 8292 --- [    Test worker] com.turbine.api.testCode01               : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-09-11 16:45:26.376  INFO 8292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11 16:45:26.426  INFO 8292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2024-09-11 16:45:26.900  INFO 8292 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11 16:45:26.951  INFO 8292 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-09-11 16:45:27.104  INFO 8292 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-09-11 16:45:27.191  INFO 8292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-11 16:45:27.391  INFO 8292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-11 16:45:27.413  INFO 8292 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-09-11 16:45:27.929  INFO 8292 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-09-11 16:45:27.937  INFO 8292 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11 16:45:28.455  WARN 8292 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11 16:45:28.969  INFO 8292 --- [    Test worker] com.turbine.api.testCode01               : Started testCode01 in 3.369 seconds (JVM running for 4.457)
+Hibernate: 
+    select
+        marker0_.mno as mno1_1_,
+        marker0_.bno as bno2_1_,
+        marker0_.degree as degree3_1_,
+        marker0_.latitude as latitude4_1_,
+        marker0_.longitude as longitud5_1_,
+        marker0_.model as model6_1_,
+        marker0_.regdate as regdate7_1_,
+        marker0_.update as update8_1_ 
+    from
+        marker marker0_ 
+    where
+        marker0_.bno=?
+[Marker(mno=1, regdate=2024-09-11T16:35:38.448072, update=2024-09-11T16:35:38.448072, degree=270, latitude=10.0, longitude=11.0, bno=1, model=doosan01), Marker(mno=2, regdate=2024-09-11T16:36:36.149546, update=2024-09-11T16:36:36.149546, degree=230, latitude=10.0, longitude=13.0, bno=1, model=doosan02)]
+Hibernate: 
+    select
+        business0_.bno as bno1_0_,
+        business0_.regdate as regdate2_0_,
+        business0_.title as title3_0_,
+        business0_.update as update4_0_,
+        business0_.user_name as user_nam5_0_ 
+    from
+        business business0_
+[Business(bno=1, regdate=2024-09-11T16:28:17.620350, update=2024-09-11T16:28:17.620350, title=test, userName=null)]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10</a> at Sep 11, 2024, 4:45:29 PM</p>
+</div>
+</div>
+</body>
+</html>
