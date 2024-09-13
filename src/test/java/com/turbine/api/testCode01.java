@@ -38,7 +38,7 @@ public class testCode01 {
 //    }
 
     @Test
-    public void test() {
+    public void test01() {
 
 //        Marker marker = Marker.builder()
 //                .bno(1L)
@@ -50,7 +50,29 @@ public class testCode01 {
 //
 //        markerRepository.save(marker);
 
-        System.out.println(markerService.getMarkersById(1L).toString());
+        System.out.println(markerService.getMarkersByBno(1L).toString());
         System.out.println(businessService.getBusinessList().toString());
+    }
+
+    @Test
+    public void test02() {
+//        Marker marker = Marker.builder()
+//                .bno(7L)
+//                .model("temp")
+//                .latitude(37.481231)
+//                .longitude(126.873596)
+//                .degree(230L)
+//                .build();
+//
+//        Marker marker2 = Marker.builder()
+//                .bno(11L)
+//                .model("temp")
+//                .latitude(37.505950)
+//                .longitude(127.069139)
+//                .degree(230L)
+//                .build();
+//
+//        markerRepository.save(marker);
+        System.out.println(markerService.getMarker(7L).toString());
     }
 }

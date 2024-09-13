@@ -6,6 +6,5 @@ import java.util.List;
 
 public interface MarkerService {
 
-    List<Marker> getMarkersById(Long bno);
-
+    List<Marker> getMarkersByBno(Long bno);
 }

@@ -14,7 +14,8 @@ public class MarkerServiceImpl implements MarkerService {
     private MarkerRepository markerRepository;
 
     @Override
-    public List<Marker> getMarkersById(Long bno) {
+    public List<Marker> getMarkersByBno(Long bno) {
         return markerRepository.findByBno(bno);
     }
+
 }

@@ -8,7 +8,6 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "MARKER")
@@ -25,12 +24,13 @@ public class Marker {
 
     @CreatedDate
     @Column(updatable = false)
-    private LocalDateTime regdate;
+    private String regdate;
 
     @CreatedDate
     @Column(updatable = true)
-    private LocalDateTime update;
+    private String update;
 
+    private String title;
     private Long degree;
     private Double latitude;
     private Double longitude;

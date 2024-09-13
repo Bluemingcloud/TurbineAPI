@@ -8,7 +8,6 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "BUSINESS")
@@ -25,11 +24,11 @@ public class Business {
 
     @CreatedDate
     @Column(updatable = false)
-    private LocalDateTime regdate;
+    private String regdate;
 
     @CreatedDate
     @Column(updatable = true)
-    private LocalDateTime update;
+    private String update;
 
     @Column(length = 2000)
     private String title;
