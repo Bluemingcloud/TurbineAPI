@@ -91,5 +91,18 @@ public class TurbineAPIRestController {
         System.out.println(markerService.getMarkersByBno(bno).toString());
         return markerService.getMarkersByBno(bno);
     }
+    // Marker 추가
+    @PostMapping("/post/marker/add")
+    public ResponseEntity<Marker> addMarker(@RequestBody Marker marker) {
+        try {
+            // 마커 추가 로직
+            Marker savedMarker = markerService.saveMarker(marker);
+            return new ResponseEntity<>(savedMarker, HttpStatus.CREATED); // 201 Created 반환
+        } catch (Exception e) {
+            // 오류 발생 시 400 Bad Request 반환
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
 
 }

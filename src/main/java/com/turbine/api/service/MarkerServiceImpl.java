@@ -18,4 +18,9 @@ public class MarkerServiceImpl implements MarkerService {
         return markerRepository.findByBno(bno);
     }
 
+    // 마커 저장 로직 구현
+    @Override
+    public Marker saveMarker(Marker marker) {
+        return markerRepository.save(marker); // 마커 저장
+    }
 }
