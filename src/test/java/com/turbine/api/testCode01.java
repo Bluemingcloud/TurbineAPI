@@ -73,6 +73,6 @@ public class testCode01 {
 //                .build();
 //
 //        markerRepository.save(marker);
-        System.out.println(markerService.getMarker(7L).toString());
+
     }
 }

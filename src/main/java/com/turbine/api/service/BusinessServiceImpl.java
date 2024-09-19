@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service("businessService")
@@ -22,8 +23,8 @@ public class BusinessServiceImpl implements BusinessService {
     }
 
     @Override
-    public Business getBusinessById(Long id) {
-        return businessRepository.findById(id).get();
+    public Optional<Business> getBusinessByBno(Long bno) {
+        return businessRepository.findById(bno);
     }
 
     @Override
