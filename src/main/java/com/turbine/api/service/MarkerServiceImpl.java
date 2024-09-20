@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service("markerService")
 public class MarkerServiceImpl implements MarkerService {
@@ -23,4 +24,15 @@ public class MarkerServiceImpl implements MarkerService {
     public Marker saveMarker(Marker marker) {
         return markerRepository.save(marker); // 마커 저장
     }
+
+    @Override
+    public Optional<Marker> getMarkerByMno(Long mno) {
+        return markerRepository.findById(mno);
+    }
+
+    @Override
+    public void deleteMarkerById(Long mno) {
+        markerRepository.deleteById(mno); // 마커 삭제
+    }
+
 }

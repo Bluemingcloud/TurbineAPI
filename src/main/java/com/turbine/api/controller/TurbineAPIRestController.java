@@ -103,6 +103,62 @@ public class TurbineAPIRestController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
+    // Marker 업데이트
+    @PostMapping("/post/marker/update/{mno}")
+    public ResponseEntity<Marker> updateMarker(@PathVariable Long mno, @RequestBody Marker marker) {
+        try {
+            // 기존 마커가 존재하는지 확인
+            Optional<Marker> existingMarkerOpt = markerService.getMarkerByMno(mno);
+            if (existingMarkerOpt.isPresent()) {
+                Marker existingMarker = existingMarkerOpt.get();
+
+                // 기존 마커에 새로운 값 덮어쓰기 (Null 체크를 통해 선택적 업데이트)
+                if (marker.getLatitude() != null) {
+                    existingMarker.setLatitude(marker.getLatitude());
+                }
+                if (marker.getLongitude() != null) {
+                    existingMarker.setLongitude(marker.getLongitude());
+                }
+                if (marker.getDegree() != null) {
+                    existingMarker.setDegree(marker.getDegree());
+                }
+                if (marker.getTitle() != null) {
+                    existingMarker.setTitle(marker.getTitle());
+                }
+                if (marker.getModel() != null) {
+                    existingMarker.setModel(marker.getModel());
+                }
+                if (marker.getUpdate() != null) {
+                    existingMarker.setUpdate(marker.getUpdate());
+                }
+
+                // 다른 필드들도 같은 방식으로 덮어쓰기
+
+                // 업데이트된 마커 저장
+                Marker updatedMarker = markerService.saveMarker(existingMarker);
+
+                // 성공적으로 업데이트된 경우 200 OK 반환
+                return new ResponseEntity<>(updatedMarker, HttpStatus.OK);
+            } else {
+                // 마커가 존재하지 않으면 404 Not Found 반환
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+        } catch (Exception e) {
+            // 오류가 발생한 경우 400 Bad Request 반환
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+    // Marker 삭제
+    @DeleteMapping("/delete/marker/{mno}")
+    public ResponseEntity<Void> deleteMarker(@PathVariable Long mno) {
+        try {
+            markerService.deleteMarkerById(mno); // 마커 삭제 서비스 호출
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
 
 
 }
